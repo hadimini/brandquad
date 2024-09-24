@@ -9,6 +9,10 @@ from api.models import Log
 
 
 class TestImportData(TestCase):
+    def setUp(self) -> None:
+        super().setUp()
+        self.url = 'https://example.com/data.txt'
+
     def load_fixture(self, filename):
         dir_path = os.path.dirname(os.path.realpath(__file__))
         file_path = os.path.join(dir_path, 'fixtures', filename)
@@ -16,13 +20,7 @@ class TestImportData(TestCase):
         with open(file_path) as f:
             return f.read()
 
-    def setUp(self) -> None:
-        super().setUp()
-        self.url = 'https://example.com/data.txt'
-
     def test_import_data_command(self):
-
-        #
         with requests_mock.Mocker() as m:
             m.register_uri(
                 'GET',

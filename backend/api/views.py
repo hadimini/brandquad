@@ -5,7 +5,7 @@ from rest_framework.filters import OrderingFilter
 
 from api.models import Log
 from api.serializers import ListSerializer, DetailSerializer
-from filters.LogFilter import LogFilter
+from api.filters.LogFilter import LogFilter
 
 
 class ListView(ListAPIView):
