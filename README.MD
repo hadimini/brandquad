@@ -27,5 +27,10 @@ Browse api:
 
 *```localhost:8000/api/```
 
-Swagger:
+Swagger: 
+
 *```localhost:8000/swagger/```
+
+Tests:
+
+*```pytest```
