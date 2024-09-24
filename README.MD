@@ -25,12 +25,12 @@ Import data:
 
 Browse api:
 
-*```localhost:8000/api/```
+* ```localhost:8000/api/```
 
 Swagger: 
 
-*```localhost:8000/swagger/```
+* ```localhost:8000/swagger/```
 
 Tests:
 
-*```pytest```
+* ```pytest```
